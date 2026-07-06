@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky's The Limit Travels — Your Journey. No Limits. Just Memories.</title>
+  <meta name="description" content="From dream getaways to worldwide adventures, Sky's The Limit Travels makes every trip unforgettable. Flights, hotels, cruises, group travel & VIP experiences.">
+  <script>document.documentElement.classList.remove("no-js");</script>
+  <link rel="preload" href="assets/fonts/montserrat-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/dancingscript-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+
+  <!-- shared SVG defs (gradients referenced across the page) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#28a7ff"/>
+        <stop offset=".5" stop-color="#8b3dff"/>
+        <stop offset="1" stop-color="#ff2da0"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- ============================================================
+       1. HEADER / NAVIGATION
+  ============================================================= -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Sky's The Limit Travels — home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" class="brand-ring" role="presentation" focusable="false">
+            <circle cx="32" cy="32" r="27" fill="none" stroke="url(#ringGrad)" stroke-width="4.5"
+                    stroke-linecap="round" stroke-dasharray="118 52" transform="rotate(-60 32 32)"/>
+            <path fill="#ff2da0" transform="translate(15 15) scale(1.4)"
+                  d="M21.4 3.4c.7-.7.2-1.9-.8-1.8l-4.6.6L4.6 9.6c-.6.4-.5 1.3.2 1.5l4.7 1.4 1.4 4.7c.2.7 1.1.8 1.5.2l7.4-11.4.6-2.6z"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-script">Sky's</span>
+          <span class="brand-sub"><b class="b-blue">THE LIMIT</b> <b class="b-pink">TRAVELS</b></span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#top" class="active" aria-current="page">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#services">Travel Services</a></li>
+          <li><a href="#group-travel">Group Travel</a></li>
+          <li><a href="#vip">VIP Experiences</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#booking" class="btn btn-gradient btn-book">Book Now</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         2. HERO
+    ============================================================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-sky" aria-hidden="true">
+        <span class="cloud cloud-1"></span>
+        <span class="cloud cloud-2"></span>
+        <span class="cloud cloud-3"></span>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="script-lead hero-script">Your Journey.</p>
+          <h1 id="hero-title" class="hero-title">
+            <span class="line-navy">NO LIMITS.</span>
+            <span class="line-gradient">JUST&nbsp;MEMORIES.</span>
+          </h1>
+          <span class="title-rule" aria-hidden="true"></span>
+          <p class="hero-sub">From dream getaways to worldwide adventures, <br>we make every trip unforgettable.</p>
+          <div class="hero-actions">
+            <a href="#destinations" class="btn btn-gradient btn-lg">
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.4 3.4c.7-.7.2-1.9-.8-1.8l-4.6.6L4.6 9.6c-.6.4-.5 1.3.2 1.5l4.7 1.4 1.4 4.7c.2.7 1.1.8 1.5.2l7.4-11.4.6-2.6z"/><path fill="currentColor" opacity=".45" d="M8.2 17.5c.3-.3.8-.3 1.1 0 .3.3.3.8 0 1.1l-2.9 2.9c-.3.3-.8.3-1.1 0-.3-.3-.3-.8 0-1.1l2.9-2.9zM5.4 14.7c.3-.3.8-.3 1.1 0 .3.3.3.8 0 1.1l-1.7 1.7c-.3.3-.8.3-1.1 0-.3-.3-.3-.8 0-1.1l1.7-1.7z"/></svg>
+              Explore Destinations
+            </a>
+            <a href="#video" class="btn btn-ghost btn-lg" id="watch-video">
+              <span class="play-dot" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 6.8v10.4c0 .8.9 1.3 1.6.9l8.2-5.2c.6-.4.6-1.3 0-1.7L10.6 5.9c-.7-.4-1.6.1-1.6.9z"/></svg>
+              </span>
+              Watch Video
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-art reveal" aria-hidden="true">
+          <!-- Prefers the real brand artwork when assets/hero-art.png exists;
+               the inline SVG recreation below renders automatically as fallback. -->
+          <object class="hero-photo" data="assets/hero-art.png" type="image/png" tabindex="-1">
+          <!-- Splash-art brand composition -->
+          <svg viewBox="0 0 660 600" class="hero-svg" role="presentation" focusable="false">
+            <defs>
+              <linearGradient id="splashBlue" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#37c6ff"/><stop offset="1" stop-color="#1f6dff"/>
+              </linearGradient>
+              <linearGradient id="splashPink" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ff7ac8"/><stop offset="1" stop-color="#ff2da0"/>
+              </linearGradient>
+              <linearGradient id="splashOrange" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffc46b"/><stop offset="1" stop-color="#ff7a45"/>
+              </linearGradient>
+              <linearGradient id="splashPurple" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#b06bff"/><stop offset="1" stop-color="#6c2bd9"/>
+              </linearGradient>
+              <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ffffff"/>
+                <stop offset=".45" stop-color="#cfe4ff"/>
+                <stop offset=".55" stop-color="#9fc4f8"/>
+                <stop offset="1" stop-color="#e8f2ff"/>
+              </linearGradient>
+              <linearGradient id="chromePink" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ffe3f3"/>
+                <stop offset=".5" stop-color="#ff9ed4"/>
+                <stop offset="1" stop-color="#ffd7ec"/>
+              </linearGradient>
+              <linearGradient id="screenGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffb17a"/><stop offset=".5" stop-color="#ff7ac8"/><stop offset="1" stop-color="#37c6ff"/>
+              </linearGradient>
+              <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+                <feGaussianBlur stdDeviation="14"/>
+              </filter>
+              <filter id="soft2" x="-40%" y="-40%" width="180%" height="180%">
+                <feGaussianBlur stdDeviation="4"/>
+              </filter>
+            </defs>
+
+            <!-- soft glow backdrop -->
+            <ellipse cx="340" cy="300" rx="270" ry="240" fill="#ffffff" opacity=".55" filter="url(#soft)"/>
+
+            <!-- splash blobs -->
+            <g class="float-slow">
+              <path fill="url(#splashBlue)" opacity=".9" d="M120 250c-40-60 10-140 90-130s90-60 170-40 130 60 120 130-40 60-30 120-60 110-140 100-90-30-140-60-40-70-70-120z" filter="url(#soft)"/>
+              <path fill="url(#splashPink)" opacity=".85" d="M430 130c60-30 140 10 150 80s60 90 30 150-90 70-150 60-70 40-130 10-60-90-40-140-20-70 20-110 80-30 120-50z" filter="url(#soft)"/>
+              <path fill="url(#splashOrange)" opacity=".8" d="M180 380c-30-40 0-90 50-100s60-50 120-40 80 50 70 100-50 60-100 70-110 10-140-30z" filter="url(#soft)"/>
+              <path fill="url(#splashPurple)" opacity=".65" d="M470 350c40-20 90 10 100 60s-20 90-70 90-90-20-90-70 20-60 60-80z" filter="url(#soft)"/>
+            </g>
+
+            <!-- splash droplets -->
+            <g class="float-mid">
+              <circle cx="112" cy="150" r="14" fill="url(#splashPink)"/>
+              <circle cx="580" cy="120" r="10" fill="url(#splashBlue)"/>
+              <circle cx="600" cy="300" r="16" fill="url(#splashOrange)"/>
+              <circle cx="80" cy="330" r="9" fill="url(#splashPurple)"/>
+              <circle cx="530" cy="470" r="12" fill="url(#splashPink)"/>
+              <circle cx="150" cy="480" r="8" fill="url(#splashBlue)"/>
+            </g>
+
+            <!-- hot air balloon -->
+            <g class="float-fast" transform="translate(28 148) scale(.85)">
+              <path fill="url(#splashPink)" d="M40 0C18 0 2 17 2 38c0 16 12 30 26 38l4 8h16l4-8c14-8 26-22 26-38C78 17 62 0 40 0z"/>
+              <path fill="#fff" opacity=".28" d="M40 0c-8 0-14 38-8 76l4 8h8l4-8c6-38 0-76-8-76z"/>
+              <rect x="32" y="88" width="16" height="12" rx="3" fill="#6c2bd9"/>
+              <path stroke="#6c2bd9" stroke-width="2" d="M32 84l0 6M48 84l0 6"/>
+            </g>
+
+            <!-- big airplane with contrails -->
+            <g class="float-mid">
+              <path stroke="#ffffff" stroke-width="6" stroke-linecap="round" fill="none" opacity=".8"
+                    d="M60 210 Q108 168 168 138 M96 236 Q150 196 214 164"/>
+              <path fill="#182052"
+                    transform="translate(258 92) rotate(36) scale(7.2) translate(-12 -12)"
+                    d="M21.5 15.5v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5V8.5l-8 5v2l8-2.5v5.5l-2 1.5v1.5l3.5-1 3.5 1V20l-2-1.5V13l8 2.5z"/>
+            </g>
+
+            <!-- small airplane -->
+            <g class="float-slow">
+              <path fill="#23306b" opacity=".9"
+                    transform="translate(568 128) rotate(24) scale(3) translate(-12 -12)"
+                    d="M21.5 15.5v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5V8.5l-8 5v2l8-2.5v5.5l-2 1.5v1.5l3.5-1 3.5 1V20l-2-1.5V13l8 2.5z"/>
+            </g>
+
+            <!-- brand 3D-style wordmark -->
+            <g class="wordmark">
+              <g transform="translate(330 268)">
+                <text class="wm wm-big wm-shadow" x="0" y="0" text-anchor="middle" transform="translate(5 7)">SKY'S</text>
+                <text class="wm wm-big" x="0" y="0" text-anchor="middle" fill="url(#chrome)">SKY'S</text>
+              </g>
+              <g transform="translate(330 322)">
+                <text class="wm wm-mid wm-shadow" x="0" y="0" text-anchor="middle" transform="translate(3 5)">THE LIMIT</text>
+                <text class="wm wm-mid" x="0" y="0" text-anchor="middle" fill="url(#chrome)">THE LIMIT</text>
+              </g>
+              <g transform="translate(330 402) rotate(-6)">
+                <text class="wm wm-script wm-shadow" x="0" y="0" text-anchor="middle" transform="translate(4 6)">Travels</text>
+                <text class="wm wm-script" x="0" y="0" text-anchor="middle" fill="url(#chromePink)">Travels</text>
+              </g>
+              <!-- sparkles -->
+              <g fill="#fff" class="sparkles">
+                <path d="M212 232l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+                <path d="M452 246l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" opacity=".9"/>
+                <path d="M406 372l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" opacity=".85"/>
+                <path d="M246 356l2.5 6 6 2.5-6 2.5-2.5 6-2.5-6-6-2.5 6-2.5z" opacity=".8"/>
+              </g>
+            </g>
+
+            <!-- skyline + cruise + phone base -->
+            <g transform="translate(0 428)">
+              <g fill="#1b2358" opacity=".92">
+                <rect x="58" y="42" width="26" height="86" rx="2"/>
+                <rect x="92" y="12" width="20" height="116" rx="2"/>
+                <path d="M100 12l2-26 2 26z" fill="#1b2358"/>
+                <rect x="120" y="56" width="30" height="72" rx="2"/>
+                <rect x="158" y="30" width="18" height="98" rx="2"/>
+                <rect x="470" y="36" width="24" height="92" rx="2"/>
+                <rect x="502" y="60" width="30" height="68" rx="2"/>
+                <rect x="540" y="18" width="18" height="110" rx="2"/>
+                <path d="M548 18l1-22 1 22z"/>
+                <rect x="566" y="52" width="26" height="76" rx="2"/>
+              </g>
+              <g fill="#37c6ff" opacity=".55">
+                <rect x="64" y="52" width="4" height="6"/><rect x="72" y="52" width="4" height="6"/>
+                <rect x="64" y="64" width="4" height="6"/><rect x="72" y="64" width="4" height="6"/>
+                <rect x="96" y="24" width="4" height="6"/><rect x="104" y="24" width="4" height="6"/>
+                <rect x="96" y="38" width="4" height="6"/><rect x="104" y="38" width="4" height="6"/>
+                <rect x="476" y="46" width="4" height="6"/><rect x="484" y="46" width="4" height="6"/>
+                <rect x="476" y="60" width="4" height="6"/><rect x="484" y="60" width="4" height="6"/>
+                <rect x="544" y="30" width="4" height="6"/><rect x="544" y="44" width="4" height="6"/>
+              </g>
+              <!-- cruise ship -->
+              <g transform="translate(12 78) scale(.8)">
+                <path fill="#f4f8ff" d="M8 40h130l-14 22H20z"/>
+                <rect x="26" y="26" width="96" height="12" rx="4" fill="#e2ecff"/>
+                <rect x="38" y="14" width="66" height="10" rx="4" fill="#f4f8ff"/>
+                <rect x="58" y="4" width="10" height="9" rx="2" fill="#ff2da0"/>
+                <g fill="#28a7ff"><circle cx="36" cy="46" r="2.6"/><circle cx="52" cy="46" r="2.6"/><circle cx="68" cy="46" r="2.6"/><circle cx="84" cy="46" r="2.6"/><circle cx="100" cy="46" r="2.6"/><circle cx="116" cy="46" r="2.6"/></g>
+              </g>
+              <!-- phone with mini scene -->
+              <g transform="translate(238 44) rotate(-8)">
+                <rect x="0" y="0" width="196" height="112" rx="16" fill="#141a3d"/>
+                <rect x="7" y="7" width="182" height="98" rx="11" fill="url(#screenGrad)"/>
+                <rect x="7" y="7" width="182" height="98" rx="11" fill="#fff" opacity=".12"/>
+                <path fill="#fff" opacity=".9" d="M118 34l26 16-8 3-6 12-4-10-12-2z"/>
+                <rect x="30" y="62" width="26" height="24" rx="3" fill="#8a5a2b"/>
+                <rect x="34" y="58" width="18" height="6" rx="2" fill="#6e441d"/>
+                <circle cx="160" cy="30" r="9" fill="#ffd76b"/>
+                <rect x="86" y="0" width="26" height="5" rx="2.5" fill="#0c1130" transform="translate(0 3)"/>
+              </g>
+              <!-- splash pool under phone -->
+              <path fill="url(#splashBlue)" opacity=".5" d="M180 140c60 22 220 24 300 4 40-10 60 6 30 16-90 28-290 26-350-2-18-9-8-24 20-18z" filter="url(#soft2)"/>
+            </g>
+          </svg>
+          </object>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. FEATURE BAR  +  4. BOOKING SEARCH
+    ============================================================= -->
+    <section class="feature-booking" id="services">
+      <div class="feature-band">
+        <div class="container">
+          <ul class="feature-grid">
+            <li class="feature-card reveal">
+              <span class="feature-ic" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><g fill="none" stroke="url(#ringGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="16" width="32" height="24" rx="4"/><path d="M18 16v-4a4 4 0 014-4h4a4 4 0 014 4v4M16 22v12M32 22v12M24 22v12"/></g></svg>
+              </span>
+              <h3>Expert Travel<br>Planning</h3>
+              <p>Personalized itineraries designed just for you.</p>
+            </li>
+            <li class="feature-card reveal">
+              <span class="feature-ic" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><g fill="none" stroke="url(#ringGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 6v11c0 9.5-6.4 17.4-15 20-8.6-2.6-15-10.5-15-20V11z"/><path d="M17.5 23.5l4.5 4.5 9-9"/></g></svg>
+              </span>
+              <h3>Best Price<br>Guarantee</h3>
+              <p>We find you the best deals without compromising quality.</p>
+            </li>
+            <li class="feature-card reveal">
+              <span class="feature-ic" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><g fill="none" stroke="url(#ringGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 26v-4a14 14 0 0128 0v4"/><rect x="6" y="26" width="8" height="12" rx="3"/><rect x="34" y="26" width="8" height="12" rx="3"/><path d="M38 38v2a6 6 0 01-6 6h-6"/></g></svg>
+              </span>
+              <h3>24/7<br>Support</h3>
+              <p>We're with you every step of the way.</p>
+            </li>
+            <li class="feature-card reveal">
+              <span class="feature-ic" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><g fill="none" stroke="url(#ringGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8h24l8 12-20 22L4 20z"/><path d="M4 20h40M18 8l-4 12 10 20M30 8l4 12-10 20"/></g></svg>
+              </span>
+              <h3>VIP<br>Experiences</h3>
+              <p>Luxury travel and exclusive perks, unlocked.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container booking-wrap" id="booking">
+        <div class="booking-card reveal">
+          <div class="booking-tabs" role="tablist" aria-label="Booking type">
+            <button class="tab active" role="tab" aria-selected="true" id="tab-flights" data-tab="flights">
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.4 3.4c.7-.7.2-1.9-.8-1.8l-4.6.6L4.6 9.6c-.6.4-.5 1.3.2 1.5l4.7 1.4 1.4 4.7c.2.7 1.1.8 1.5.2l7.4-11.4.6-2.6z"/></svg>
+              Flights
+            </button>
+            <button class="tab" role="tab" aria-selected="false" id="tab-hotels" data-tab="hotels">
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 21V4a1 1 0 011-1h9a1 1 0 011 1v17h-4v-4H8v4H4zm3-14h2v2H7V7zm4 0h2v2h-2V7zM7 11h2v2H7v-2zm4 0h2v2h-2v-2zm6 10V9l4 2v10h-4z"/></svg>
+              Hotels
+            </button>
+            <button class="tab" role="tab" aria-selected="false" id="tab-packages" data-tab="packages">
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6V4a2 2 0 012-2h2a2 2 0 012 2v2h4a1 1 0 011 1v13a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h4zm2 0h2V4h-2v2zM8 9v10h1.5V9H8zm6.5 0v10H16V9h-1.5z"/></svg>
+              Packages
+            </button>
+            <button class="tab" role="tab" aria-selected="false" id="tab-cruises" data-tab="cruises">
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2l1 2h3v3l4 2-1.5 5.3c-.9-.4-1.7-.3-2.5.2-1.2.8-2.8.8-4 0-1.2.8-2.8.8-4 0-.8-.5-1.6-.6-2.5-.2L4 9l4-2V4h3l1-2zm-8 17c1.2.8 2.8.8 4 0 1.2.8 2.8.8 4 0 1.2.8 2.8.8 4 0 1 .7 2.3.8 3.4.3l.6.4v2c-1.4.5-2.9.3-4-.4-1.2.8-2.8.8-4 0-1.2.8-2.8.8-4 0-1.1.7-2.6.9-4 .4v-2l.6-.4c1.1.5 2.4.4 3.4-.3z"/></svg>
+              Cruises
+            </button>
+          </div>
+
+          <form class="booking-form" id="booking-form" aria-label="Search trips">
+            <div class="bf-field">
+              <label for="bf-from">From</label>
+              <div class="bf-input">
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 017 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 017-7zm0 9.5A2.5 2.5 0 1012 6a2.5 2.5 0 000 5.5z"/></svg>
+                <input type="text" id="bf-from" name="from" placeholder="Leaving From" autocomplete="off">
+              </div>
+            </div>
+
+            <button type="button" class="bf-swap" id="bf-swap" aria-label="Swap origin and destination">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7.5 3l4 4h-3v7h-2V7h-3l4-4zm9 18l-4-4h3v-7h2v7h3l-4 4z"/></svg>
+            </button>
+
+            <div class="bf-field">
+              <label for="bf-to">To</label>
+              <div class="bf-input">
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 017 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 017-7zm0 9.5A2.5 2.5 0 1012 6a2.5 2.5 0 000 5.5z"/></svg>
+                <input type="text" id="bf-to" name="to" placeholder="Going To" autocomplete="off">
+              </div>
+            </div>
+
+            <div class="bf-field">
+              <label for="bf-depart">Depart</label>
+              <div class="bf-input">
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h2v2h6V2h2v2h3a1 1 0 011 1v15a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1h3V2zm12 8H5v9h14v-9z"/></svg>
+                <input type="text" id="bf-depart" name="depart" placeholder="Select Date" onfocus="this.type='date'" onblur="if(!this.value)this.type='text'">
+              </div>
+            </div>
+
+            <div class="bf-field">
+              <label for="bf-return">Return</label>
+              <div class="bf-input">
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h2v2h6V2h2v2h3a1 1 0 011 1v15a1 1 0 01-1 1H4a1 1 0 01-1-1V5a1 1 0 011-1h3V2zm12 8H5v9h14v-9z"/></svg>
+                <input type="text" id="bf-return" name="return" placeholder="Select Date" onfocus="this.type='date'" onblur="if(!this.value)this.type='text'">
+              </div>
+            </div>
+
+            <div class="bf-field">
+              <label for="bf-travelers">Travelers</label>
+              <div class="bf-input">
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a4 4 0 100-8 4 4 0 000 8zm-8 8a8 8 0 0116 0v1H4v-1z"/></svg>
+                <select id="bf-travelers" name="travelers">
+                  <option>1 Traveler</option>
+                  <option>2 Travelers</option>
+                  <option>3 Travelers</option>
+                  <option>4 Travelers</option>
+                  <option>5+ Travelers</option>
+                </select>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-gradient btn-search">
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 105.3 14l5.4 5.4 1.4-1.4-5.4-5.4A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. POPULAR DESTINATIONS
+    ============================================================= -->
+    <section class="destinations" id="destinations" aria-labelledby="dest-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="script-lead">Explore The World</p>
+            <h2 id="dest-title" class="section-title">POPULAR DESTINATIONS</h2>
+          </div>
+          <a class="link-arrow" href="#destinations">View All Destinations
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 5l7 7-7 7-1.4-1.4 4.6-4.6H4v-2h12.7l-4.6-4.6L13.5 5z"/></svg>
+          </a>
+        </div>
+
+        <div class="dest-grid">
+          <!-- Bali -->
+          <article class="dest-card reveal">
+            <div class="dest-media">
+              <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Overwater bungalows at sunset in Bali, Indonesia">
+                <defs>
+                  <linearGradient id="baliSky" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#ff9a5c"/><stop offset=".45" stop-color="#ff6f91"/><stop offset=".75" stop-color="#c85ec7"/><stop offset="1" stop-color="#7d4fc9"/>
+                  </linearGradient>
+                  <linearGradient id="baliSea" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#ff8f6b"/><stop offset="1" stop-color="#7d4fc9"/>
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="200" fill="url(#baliSky)"/>
+                <circle cx="200" cy="178" r="46" fill="#ffdf8e"/>
+                <circle cx="200" cy="178" r="60" fill="#ffdf8e" opacity=".35"/>
+                <rect y="196" width="400" height="104" fill="url(#baliSea)"/>
+                <g stroke="#ffd9a0" stroke-width="3" opacity=".6" stroke-linecap="round">
+                  <path d="M150 226h100M130 244h60M230 250h80M170 268h90"/>
+                </g>
+                <g fill="#3c214d">
+                  <path d="M20 214h64v-8l-32-22-32 22z"/><rect x="24" y="214" width="56" height="26"/>
+                  <g stroke="#3c214d" stroke-width="4"><path d="M30 240v24M74 240v24M52 240v22"/></g>
+                  <path d="M96 224h56v-7l-28-19-28 19z"/><rect x="100" y="224" width="48" height="22"/>
+                  <g stroke="#3c214d" stroke-width="4"><path d="M106 246v20M142 246v20"/></g>
+                  <path d="M300 220h60v-8l-30-20-30 20z"/><rect x="304" y="220" width="52" height="24"/>
+                  <g stroke="#3c214d" stroke-width="4"><path d="M310 244v22M350 244v22"/></g>
+                  <path d="M84 236h116v5H84zM290 240h84v5h-84z"/>
+                </g>
+                <g fill="#2c1740">
+                  <path d="M368 190c-4-26 10-44 10-44s4 26-2 44c14-12 30-14 30-14s-12 20-26 26c8 2 16 8 16 8s-16 6-26 0l-4 40h-6l4-42c-10 4-22-2-22-2s10-10 26-16z"/>
+                </g>
+              </svg>
+            </div>
+            <span class="dest-tag"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 017 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 017-7zm0 9.5A2.5 2.5 0 1012 6a2.5 2.5 0 000 5.5z"/></svg>Bali, Indonesia</span>
+            <div class="dest-info">
+              <p class="dest-price"><span>From</span><b>$899</b></p>
+              <a href="#booking" class="dest-cta">Explore Now
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 5l7 7-7 7-1.4-1.4L13.2 12 7.6 6.4 9 5z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Paris -->
+          <article class="dest-card reveal">
+            <div class="dest-media">
+              <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="The Eiffel Tower with cherry blossoms in Paris, France">
+                <defs>
+                  <linearGradient id="parisSky" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#8fb8ff"/><stop offset=".55" stop-color="#d99bf0"/><stop offset="1" stop-color="#ffb3d9"/>
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="300" fill="url(#parisSky)"/>
+                <circle cx="330" cy="60" r="26" fill="#fff3c4" opacity=".9"/>
+                <g fill="#5b3a83" opacity=".55">
+                  <rect x="6" y="216" width="30" height="60"/><rect x="44" y="230" width="24" height="46"/><rect x="330" y="222" width="28" height="54"/><rect x="364" y="236" width="30" height="40"/>
+                  <path d="M6 216l15-10 15 10zM330 222l14-9 14 9z"/>
+                </g>
+                <g fill="#3b2564">
+                  <path d="M200 40l7 60h-14zM178 148c8-18 14-34 16-48h12c2 14 8 30 16 48h-12c-3-8-6-16-8-26-2 10-5 18-8 26h-16zM160 220c14-22 24-46 28-72h24c4 26 14 50 28 72h-18c-9-14-16-30-22-50-6 20-13 36-22 50h-18z"/>
+                  <path d="M186 100h28v6h-28zM172 148h56v7h-56zM150 220h100v8H150z"/>
+                  <path d="M160 220c12 10 68 10 80 0v8H160z" opacity=".9"/>
+                </g>
+                <rect y="272" width="400" height="28" fill="#7d5bb0"/>
+                <g fill="#ff8fc6">
+                  <circle cx="40" cy="80" r="22"/><circle cx="66" cy="62" r="16"/><circle cx="80" cy="92" r="18"/><circle cx="24" cy="106" r="14"/>
+                  <circle cx="356" cy="150" r="20"/><circle cx="380" cy="128" r="15"/><circle cx="382" cy="168" r="13"/>
+                </g>
+                <g fill="#e85aa0">
+                  <circle cx="52" cy="88" r="5"/><circle cx="70" cy="74" r="4"/><circle cx="34" cy="70" r="4"/><circle cx="366" cy="140" r="4"/><circle cx="378" cy="158" r="3.5"/>
+                </g>
+                <path stroke="#7a4a24" stroke-width="8" stroke-linecap="round" d="M58 118q-8 40-4 158M368 178q-6 30-4 98"/>
+              </svg>
+            </div>
+            <span class="dest-tag"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 017 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 017-7zm0 9.5A2.5 2.5 0 1012 6a2.5 2.5 0 000 5.5z"/></svg>Paris, France</span>
+            <div class="dest-info">
+              <p class="dest-price"><span>From</span><b>$1,299</b></p>
+              <a href="#booking" class="dest-cta">Explore Now
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 5l7 7-7 7-1.4-1.4L13.2 12 7.6 6.4 9 5z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Dubai -->
+          <article class="dest-card reveal">
+            <div class="dest-media">
+              <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="The Burj Khalifa and Dubai skyline at dusk">
+                <defs>
+                  <linearGradient id="dubaiSky" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#153e8f"/><stop offset=".55" stop-color="#3f7ad1"/><stop offset="1" stop-color="#79c4f2"/>
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="300" fill="url(#dubaiSky)"/>
+                <circle cx="70" cy="64" r="20" fill="#fff2b8" opacity=".95"/>
+                <g fill="#0e2050">
+                  <path d="M200 22l5 44h-10z"/>
+                  <path d="M195 66h10l6 60h-22zM185 126h30l8 70h-46zM169 196h62l10 76h-82z"/>
+                  <rect x="60" y="180" width="34" height="92"/>
+                  <path d="M60 180l17-14 17 14z"/>
+                  <rect x="104" y="206" width="26" height="66"/>
+                  <rect x="140" y="188" width="24" height="84"/>
+                  <path d="M140 188l12-30 12 30z"/>
+                  <rect x="252" y="196" width="30" height="76"/>
+                  <path d="M252 196c0-18 30-18 30 0z"/>
+                  <rect x="292" y="172" width="26" height="100"/>
+                  <path d="M292 172l13-20 13 20z"/>
+                  <rect x="330" y="204" width="34" height="68"/>
+                  <path d="M330 204c8-14 26-14 34 0z"/>
+                </g>
+                <g fill="#7fd4ff" opacity=".8">
+                  <rect x="66" y="192" width="5" height="7"/><rect x="76" y="192" width="5" height="7"/><rect x="86" y="192" width="5" height="7"/>
+                  <rect x="66" y="206" width="5" height="7"/><rect x="86" y="206" width="5" height="7"/>
+                  <rect x="146" y="200" width="4" height="6"/><rect x="154" y="200" width="4" height="6"/>
+                  <rect x="298" y="184" width="5" height="7"/><rect x="308" y="184" width="5" height="7"/>
+                  <rect x="298" y="200" width="5" height="7"/>
+                  <rect x="190" y="140" width="5" height="7"/><rect x="202" y="140" width="5" height="7"/><rect x="214" y="140" width="5" height="7"/>
+                  <rect x="184" y="210" width="5" height="7"/><rect x="198" y="210" width="5" height="7"/><rect x="212" y="210" width="5" height="7"/><rect x="226" y="210" width="5" height="7"/>
+                </g>
+                <rect y="272" width="400" height="28" fill="#0a1840"/>
+                <g stroke="#7fd4ff" stroke-width="2" opacity=".5" stroke-linecap="round">
+                  <path d="M20 282h60M120 288h80M260 282h70"/>
+                </g>
+              </svg>
+            </div>
+            <span class="dest-tag"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 017 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 017-7zm0 9.5A2.5 2.5 0 1012 6a2.5 2.5 0 000 5.5z"/></svg>Dubai, UAE</span>
+            <div class="dest-info">
+              <p class="dest-price"><span>From</span><b>$1,199</b></p>
+              <a href="#booking" class="dest-cta">Explore Now
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 5l7 7-7 7-1.4-1.4L13.2 12 7.6 6.4 9 5z"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Cancun -->
+          <article class="dest-card reveal">
+            <div class="dest-media">
+              <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Turquoise beach and resort hotels in Cancun, Mexico">
+                <defs>
+                  <linearGradient id="cancunSea" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#0e6fb8"/><stop offset=".6" stop-color="#18b1c9"/><stop offset="1" stop-color="#5fe3d4"/>
+                  </linearGradient>
+                  <linearGradient id="cancunSand" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#ffedc2"/><stop offset="1" stop-color="#ffd98e"/>
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="300" fill="url(#cancunSea)"/>
+                <path d="M0 208 Q120 168 220 206 T400 220 V300 H0 Z" fill="#8ff0df" opacity=".55"/>
+                <path d="M0 230 Q130 196 240 228 T400 244 V300 H0 Z" fill="url(#cancunSand)"/>
+                <g fill="#ffffff">
+                  <path d="M36 130h34v72H36z"/><path d="M40 122h26v8H40z"/>
+                  <path d="M84 112h30v90H84z"/><path d="M88 104h22v8H88z"/>
+                  <path d="M128 128h26v74h-26z"/>
+                  <path d="M300 140l64-18v84h-64z"/>
+                </g>
+                <g fill="#9adcf0">
+                  <rect x="42" y="138" width="7" height="9"/><rect x="54" y="138" width="7" height="9"/>
+                  <rect x="42" y="154" width="7" height="9"/><rect x="54" y="154" width="7" height="9"/>
+                  <rect x="90" y="120" width="6" height="8"/><rect x="101" y="120" width="6" height="8"/>
+                  <rect x="90" y="136" width="6" height="8"/><rect x="101" y="136" width="6" height="8"/>
+                  <rect x="134" y="136" width="6" height="8"/><rect x="145" y="136" width="6" height="8"/>
+                  <rect x="310" y="146" width="7" height="9"/><rect x="324" y="142" width="7" height="9"/><rect x="338" y="138" width="7" height="9"/>
+                </g>
+                <g>
+                  <circle cx="236" cy="252" r="17" fill="#ff5d8f"/>
+                  <path fill="#fff" d="M236 235a17 17 0 010 34c6-10 6-24 0-34z" opacity=".5"/>
+                  <path stroke="#c2367a" stroke-width="3" d="M236 269v14"/>
+                  <circle cx="286" cy="262" r="14" fill="#ffb13d"/>
+                  <path stroke="#c07714" stroke-width="3" d="M286 276v12"/>
+                </g>
+                <path fill="#2b7a3f" d="M180 258c-2-20 8-34 8-34s6 20 0 34c10-8 24-10 24-10s-8 16-20 20c8 2 12 6 12 6s-12 4-20 0c-8 4-20 0-20 0s6-4 12-6c-10-4-18-18-18-18s14 2 22 8z"/>
+                <g stroke="#ffffff" stroke-width="3" opacity=".7" stroke-linecap="round">
+                  <path d="M30 92q20-10 40 0M290 70q16-8 32 0M120 60q14-7 28 0"/>
+                </g>
+              </svg>
+            </div>
+            <span class="dest-tag"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 017 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 017-7zm0 9.5A2.5 2.5 0 1012 6a2.5 2.5 0 000 5.5z"/></svg>Cancun, Mexico</span>
+            <div class="dest-info">
+              <p class="dest-price"><span>From</span><b>$699</b></p>
+              <a href="#booking" class="dest-cta">Explore Now
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 5l7 7-7 7-1.4-1.4L13.2 12 7.6 6.4 9 5z"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         6. WHY TRAVEL WITH US
+    ============================================================= -->
+    <section class="why" id="about" aria-labelledby="why-title">
+      <div class="container why-grid">
+        <div class="why-media reveal">
+          <svg viewBox="0 0 520 420" class="why-svg" role="img" aria-label="View of a sunset sky and airplane wing through a cabin window">
+            <defs>
+              <linearGradient id="cabin" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f6e9ff"/><stop offset="1" stop-color="#e4d0f5"/>
+              </linearGradient>
+              <linearGradient id="windowSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#7fb3ff"/><stop offset=".5" stop-color="#d9a1f0"/><stop offset="1" stop-color="#ffb27a"/>
+              </linearGradient>
+              <linearGradient id="wing" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#dfe9ff"/><stop offset="1" stop-color="#8fb0e8"/>
+              </linearGradient>
+            </defs>
+            <rect width="520" height="420" rx="24" fill="url(#cabin)"/>
+            <rect x="24" y="24" width="180" height="372" rx="18" fill="#c9aee6" opacity=".5"/>
+            <rect x="40" y="60" width="140" height="300" rx="16" fill="#a678d1" opacity=".45"/>
+            <g transform="translate(210 34)">
+              <rect x="0" y="0" width="286" height="352" rx="120" fill="#ffffff"/>
+              <rect x="18" y="18" width="250" height="316" rx="104" fill="#f0d9ef"/>
+              <rect x="30" y="30" width="226" height="292" rx="94" fill="url(#windowSky)"/>
+              <g fill="#ffffff" opacity=".92">
+                <ellipse cx="80" cy="240" rx="46" ry="18"/>
+                <ellipse cx="120" cy="256" rx="56" ry="20"/>
+                <ellipse cx="186" cy="248" rx="48" ry="17"/>
+                <ellipse cx="150" cy="230" rx="38" ry="14"/>
+                <ellipse cx="70" cy="150" rx="26" ry="9" opacity=".7"/>
+                <ellipse cx="200" cy="120" rx="30" ry="10" opacity=".7"/>
+              </g>
+              <path fill="url(#wing)" d="M96 200 L240 132 q10-4 14 4 l2 6-140 74-24-6z"/>
+              <path fill="#5b7fb8" d="M236 134l18-8 4 10-18 8z"/>
+              <circle cx="72" cy="96" r="22" fill="#ffe08a" opacity=".95"/>
+              <circle cx="72" cy="96" r="32" fill="#ffe08a" opacity=".35"/>
+            </g>
+            <g transform="translate(60 120)" opacity=".9">
+              <rect x="0" y="0" width="96" height="180" rx="14" fill="#e0447f"/>
+              <rect x="10" y="14" width="76" height="70" rx="10" fill="#f066a5"/>
+              <circle cx="48" cy="130" r="20" fill="#f9d6e6"/>
+            </g>
+          </svg>
+          <div class="dreams-badge">
+            <span class="db-script">We Turn</span>
+            <span class="db-strong">DREAMS <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.4 3.4c.7-.7.2-1.9-.8-1.8l-4.6.6L4.6 9.6c-.6.4-.5 1.3.2 1.5l4.7 1.4 1.4 4.7c.2.7 1.1.8 1.5.2l7.4-11.4.6-2.6z"/></svg></span>
+            <span class="db-strong grad-text">INTO DESTINATIONS</span>
+          </div>
+        </div>
+
+        <div class="why-copy reveal">
+          <p class="script-lead">Why Travel With Us?</p>
+          <h2 id="why-title" class="section-title">
+            IT'S MORE THAN A TRIP,<br>
+            <span class="grad-text">IT'S AN EXPERIENCE.</span>
+          </h2>
+          <p class="why-sub">At Sky's The Limit Travels, we believe travel opens minds, creates stories, and connects hearts.</p>
+          <ul class="check-grid">
+            <li>
+              <span class="check-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9.5 16.2l-3.7-3.7-1.4 1.4 5.1 5.1 11-11-1.4-1.4z"/></svg></span>
+              Customized Itineraries
+            </li>
+            <li>
+              <span class="check-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9.5 16.2l-3.7-3.7-1.4 1.4 5.1 5.1 11-11-1.4-1.4z"/></svg></span>
+              Trusted Travel Partners
+            </li>
+            <li>
+              <span class="check-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9.5 16.2l-3.7-3.7-1.4 1.4 5.1 5.1 11-11-1.4-1.4z"/></svg></span>
+              Hassle-Free Booking
+            </li>
+            <li>
+              <span class="check-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M9.5 16.2l-3.7-3.7-1.4 1.4 5.1 5.1 11-11-1.4-1.4z"/></svg></span>
+              Memories That Last a Lifetime
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. CALL-TO-ACTION BANNER
+    ============================================================= -->
+    <section class="cta" id="group-travel" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <svg class="cta-palms cta-palms-l" viewBox="0 0 200 220" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M96 210c-8-60 2-104 2-104s-26-8-44-34c22 6 40 16 40 16s-20-28-16-62c16 22 28 56 28 56s6-36 28-56c4 34-14 62-14 62s18-10 40-16c-18 26-44 34-44 34s10 44 2 104z"/>
+            <path fill="currentColor" opacity=".7" d="M30 214c-4-38 2-66 2-66s-18-6-30-22c15 4 27 10 27 10s-13-18-10-40c11 14 18 36 18 36s4-23 18-36c3 22-10 40-10 40s12-6 27-10c-12 16-30 22-30 22s6 28 2 66z"/>
+          </svg>
+          <svg class="cta-palms cta-palms-r" viewBox="0 0 200 220" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M96 210c-8-60 2-104 2-104s-26-8-44-34c22 6 40 16 40 16s-20-28-16-62c16 22 28 56 28 56s6-36 28-56c4 34-14 62-14 62s18-10 40-16c-18 26-44 34-44 34s10 44 2 104z"/>
+          </svg>
+
+          <div class="cta-left">
+            <span class="cta-globe" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><g fill="none" stroke="url(#ringGrad)" stroke-width="2.4" stroke-linecap="round"><circle cx="24" cy="24" r="15"/><ellipse cx="24" cy="24" rx="7" ry="15"/><path d="M9.5 20h29M9.5 28h29"/><path d="M36 10c6 5 7 10 4 12M12 38c-6-5-7-10-4-12" opacity=".8"/><path fill="url(#ringGrad)" stroke="none" d="M40.5 5.5c.5-.3 1.1.2.9.8l-1.6 3 1.9 1.9c.2.2.1.6-.2.7l-1.4.4-1.3-1.3-1.6 2.8.6 1.1c.1.2 0 .5-.3.5h-.8l-.6-1.1-1.2-.1c-.2 0-.3-.3-.2-.5l.9-.8 3.1-1.8-1.3-1.3.4-1.4c.1-.3.5-.4.7-.2l1.9 1.9 3-1.6z" transform="translate(-6 2)"/></g></svg>
+            </span>
+            <div>
+              <h2 id="cta-title" class="cta-title">READY TO TAKE OFF?</h2>
+              <p class="cta-script">Let's Plan Your Next Adventure!</p>
+            </div>
+          </div>
+
+          <a href="#booking" class="btn btn-light btn-lg">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.4 3.4c.7-.7.2-1.9-.8-1.8l-4.6.6L4.6 9.6c-.6.4-.5 1.3.2 1.5l4.7 1.4 1.4 4.7c.2.7 1.1.8 1.5.2l7.4-11.4.6-2.6z"/></svg>
+            Book Your Trip Today
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. FOOTER
+    ============================================================= -->
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <div class="f-brand" id="vip">
+          <a class="brand brand-footer" href="#top" aria-label="Sky's The Limit Travels — back to top">
+            <span class="brand-text">
+              <span class="brand-script brand-script-light">Sky's <svg class="f-plane" viewBox="0 0 24 24" aria-hidden="true"><path fill="#ff2da0" d="M21.4 3.4c.7-.7.2-1.9-.8-1.8l-4.6.6L4.6 9.6c-.6.4-.5 1.3.2 1.5l4.7 1.4 1.4 4.7c.2.7 1.1.8 1.5.2l7.4-11.4.6-2.6z"/></svg></span>
+              <span class="brand-sub"><b class="b-blue">THE LIMIT</b> <b class="b-pink">TRAVELS</b></span>
+            </span>
+          </a>
+          <p class="f-tagline">Creating unforgettable travel experiences with limitless possibilities.</p>
+          <div class="f-social">
+            <a href="#top" aria-label="Facebook"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.2 0-1-.1-1.9-.1-1.9 0-3.2 1.2-3.2 3.3V11H8.9v3h2.4v7h2.2z"/></svg></a>
+            <a href="#top" aria-label="Instagram"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 4.3c2.5 0 2.8 0 3.8.1 2.4.1 3.6 1.3 3.7 3.7 0 1 .1 1.3.1 3.8s0 2.8-.1 3.8c-.1 2.4-1.3 3.6-3.7 3.7-1 .1-1.3.1-3.8.1s-2.8 0-3.8-.1c-2.4-.1-3.6-1.3-3.7-3.7 0-1-.1-1.3-.1-3.8s0-2.8.1-3.8C4.6 5.7 5.8 4.5 8.2 4.4c1-.1 1.3-.1 3.8-.1zM12 2.5c-2.6 0-2.9 0-3.9.1-3.3.2-5.3 2.1-5.4 5.4-.1 1-.1 1.4-.1 4s0 2.9.1 3.9c.2 3.3 2.1 5.3 5.4 5.4 1 .1 1.4.1 3.9.1s2.9 0 3.9-.1c3.3-.2 5.3-2.1 5.4-5.4.1-1 .1-1.4.1-3.9s0-2.9-.1-3.9c-.2-3.3-2.1-5.3-5.4-5.4-1-.2-1.3-.2-3.9-.2zm0 4.6a4.9 4.9 0 100 9.8 4.9 4.9 0 000-9.8zm0 8.1a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zm5.1-9.4a1.1 1.1 0 100 2.3 1.1 1.1 0 000-2.3z"/></svg></a>
+            <a href="#top" aria-label="TikTok"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 3c.4 2.1 1.7 3.4 3.9 3.6v2.8c-1.4.1-2.7-.3-3.9-1.1v5.7c0 4.3-3.6 6.4-6.9 5.1-2.3-.9-3.6-3.3-3-5.8.6-2.4 2.9-4 5.4-3.7v2.9c-.3 0-.7.1-1 .2-1.2.4-1.8 1.4-1.6 2.6.2 1 1.2 1.8 2.3 1.7 1.2-.1 2-.9 2-2.3V3h2.8z"/></svg></a>
+            <a href="#contact" aria-label="Email"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1zm8 7.5L5.2 7h13.6L12 12.5zM5 9.3V17h14V9.3l-7 5.2-7-5.2z"/></svg></a>
+          </div>
+        </div>
+
+        <nav class="f-col" aria-label="Quick links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#services">Travel Services</a></li>
+            <li><a href="#group-travel">Group Travel</a></li>
+            <li><a href="#vip">VIP Experiences</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <nav class="f-col" aria-label="Travel services">
+          <h4>Travel Services</h4>
+          <ul>
+            <li><a href="#booking">Flights</a></li>
+            <li><a href="#booking">Hotels</a></li>
+            <li><a href="#booking">Vacation Packages</a></li>
+            <li><a href="#booking">Cruises</a></li>
+            <li><a href="#booking">Travel Insurance</a></li>
+            <li><a href="#booking">Airport Transfers</a></li>
+          </ul>
+        </nav>
+
+        <div class="f-col f-contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+              <a href="tel:+19125550198">(912) 555-0198</a>
+            </li>
+            <li>
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1zm8 7.5L5.2 7h13.6L12 12.5zM5 9.3V17h14V9.3l-7 5.2-7-5.2z"/></svg>
+              <a href="mailto:hello@skysthelimittravels.com">hello@skysthelimittravels.com</a>
+            </li>
+            <li>
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 017 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 017-7zm0 9.5A2.5 2.5 0 1012 6a2.5 2.5 0 000 5.5z"/></svg>
+              <span>Hinesville, Georgia</span>
+            </li>
+            <li>
+              <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 110 20 10 10 0 010-20zm1 5h-2v6l5.2 3.1 1-1.6-4.2-2.5V7z"/></svg>
+              <span>Mon – Fri: 9AM – 6PM EST</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="f-col f-news" id="blog">
+          <h4>Join Our Community</h4>
+          <p>Get exclusive deals and travel inspiration straight to your inbox!</p>
+          <form class="news-form" id="news-form" aria-label="Newsletter signup">
+            <label class="sr-only" for="news-email">Email address</label>
+            <input type="email" id="news-email" name="email" placeholder="Your Email Address" required>
+            <button type="submit" class="btn btn-gradient btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container fb-inner">
+          <p>© 2026 Sky's The Limit Travels. All Rights Reserved.</p>
+          <p class="fb-script">Your Journey. No Limits. Just Memories.</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <button class="to-top" id="to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 5l7 7-1.4 1.4L13 8.8V20h-2V8.8l-4.6 4.6L5 12l7-7z"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

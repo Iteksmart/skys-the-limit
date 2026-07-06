@@ -14,6 +14,10 @@
 </head>
 <body>
 
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
   <!-- shared SVG defs (gradients referenced across the page) -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
     <defs>
@@ -58,7 +62,7 @@
         </ul>
       </nav>
 
-      <a href="#booking" class="btn btn-gradient btn-book">Book Now</a>
+      <a href="#booking" class="btn btn-gradient btn-book" data-magnetic>Book Now</a>
 
       <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -79,16 +83,16 @@
       </div>
 
       <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="script-lead hero-script">Your Journey.</p>
+        <div class="hero-copy">
+          <p class="script-lead hero-script reveal">Your Journey.</p>
           <h1 id="hero-title" class="hero-title">
-            <span class="line-navy">NO LIMITS.</span>
-            <span class="line-gradient">JUST MEMORIES.</span>
+            <span class="line-navy" data-split style="--d:.1s">NO LIMITS.</span>
+            <span class="line-gradient" data-split style="--d:.28s">JUST MEMORIES.</span>
           </h1>
-          <span class="title-rule" aria-hidden="true"></span>
-          <p class="hero-sub">From dream getaways to worldwide adventures, <br>we make every trip unforgettable.</p>
-          <div class="hero-actions">
-            <a href="#destinations" class="btn btn-gradient btn-lg">
+          <span class="title-rule reveal" aria-hidden="true" style="--d:.6s"></span>
+          <p class="hero-sub reveal" style="--d:.4s">From dream getaways to worldwide adventures, <br>we make every trip unforgettable.</p>
+          <div class="hero-actions reveal" style="--d:.52s">
+            <a href="#destinations" class="btn btn-gradient btn-lg" data-magnetic>
               <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.4 3.4c.7-.7.2-1.9-.8-1.8l-4.6.6L4.6 9.6c-.6.4-.5 1.3.2 1.5l4.7 1.4 1.4 4.7c.2.7 1.1.8 1.5.2l7.4-11.4.6-2.6z"/><path fill="currentColor" opacity=".45" d="M8.2 17.5c.3-.3.8-.3 1.1 0 .3.3.3.8 0 1.1l-2.9 2.9c-.3.3-.8.3-1.1 0-.3-.3-.3-.8 0-1.1l2.9-2.9zM5.4 14.7c.3-.3.8-.3 1.1 0 .3.3.3.8 0 1.1l-1.7 1.7c-.3.3-.8.3-1.1 0-.3-.3-.3-.8 0-1.1l1.7-1.7z"/></svg>
               Explore Destinations
             </a>
@@ -104,7 +108,7 @@
         <div class="hero-art reveal" aria-hidden="true">
           <!-- Prefers the real brand artwork when assets/hero-art.png exists;
                the inline SVG recreation below renders automatically as fallback. -->
-          <object class="hero-photo" data="assets/hero-art.png" type="image/png" tabindex="-1">
+          <object class="hero-photo" data="assets/hero-art.png" type="image/png" tabindex="-1" data-parallax="-0.05">
           <!-- Splash-art brand composition -->
           <svg viewBox="0 0 660 600" class="hero-svg" role="presentation" focusable="false">
             <defs>
@@ -270,28 +274,32 @@
       <div class="feature-band">
         <div class="container">
           <ul class="feature-grid">
-            <li class="feature-card reveal">
+            <li class="feature-card reveal" data-tilt>
+              <span class="feature-num" aria-hidden="true">01</span>
               <span class="feature-ic" aria-hidden="true">
                 <svg viewBox="0 0 48 48"><g fill="none" stroke="url(#ringGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="16" width="32" height="24" rx="4"/><path d="M18 16v-4a4 4 0 014-4h4a4 4 0 014 4v4M16 22v12M32 22v12M24 22v12"/></g></svg>
               </span>
               <h3>Expert Travel<br>Planning</h3>
               <p>Personalized itineraries designed just for you.</p>
             </li>
-            <li class="feature-card reveal">
+            <li class="feature-card reveal" data-tilt style="--d:.08s">
+              <span class="feature-num" aria-hidden="true">02</span>
               <span class="feature-ic" aria-hidden="true">
                 <svg viewBox="0 0 48 48"><g fill="none" stroke="url(#ringGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 6v11c0 9.5-6.4 17.4-15 20-8.6-2.6-15-10.5-15-20V11z"/><path d="M17.5 23.5l4.5 4.5 9-9"/></g></svg>
               </span>
               <h3>Best Price<br>Guarantee</h3>
               <p>We find you the best deals without compromising quality.</p>
             </li>
-            <li class="feature-card reveal">
+            <li class="feature-card reveal" data-tilt style="--d:.16s">
+              <span class="feature-num" aria-hidden="true">03</span>
               <span class="feature-ic" aria-hidden="true">
                 <svg viewBox="0 0 48 48"><g fill="none" stroke="url(#ringGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 26v-4a14 14 0 0128 0v4"/><rect x="6" y="26" width="8" height="12" rx="3"/><rect x="34" y="26" width="8" height="12" rx="3"/><path d="M38 38v2a6 6 0 01-6 6h-6"/></g></svg>
               </span>
               <h3>24/7<br>Support</h3>
               <p>We're with you every step of the way.</p>
             </li>
-            <li class="feature-card reveal">
+            <li class="feature-card reveal" data-tilt style="--d:.24s">
+              <span class="feature-num" aria-hidden="true">04</span>
               <span class="feature-ic" aria-hidden="true">
                 <svg viewBox="0 0 48 48"><g fill="none" stroke="url(#ringGrad)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8h24l8 12-20 22L4 20z"/><path d="M4 20h40M18 8l-4 12 10 20M30 8l4 12-10 20"/></g></svg>
               </span>
@@ -374,7 +382,7 @@
               </div>
             </div>
 
-            <button type="submit" class="btn btn-gradient btn-search">
+            <button type="submit" class="btn btn-gradient btn-search" data-magnetic>
               <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 105.3 14l5.4 5.4 1.4-1.4-5.4-5.4A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/></svg>
               Search
             </button>
@@ -388,19 +396,19 @@
     ============================================================= -->
     <section class="destinations" id="destinations" aria-labelledby="dest-title">
       <div class="container">
-        <div class="section-head reveal">
+        <div class="section-head">
           <div>
-            <p class="script-lead">Explore The World</p>
-            <h2 id="dest-title" class="section-title">POPULAR DESTINATIONS</h2>
+            <p class="script-lead reveal">Explore The World</p>
+            <h2 id="dest-title" class="section-title" data-split style="--d:.12s">POPULAR DESTINATIONS</h2>
           </div>
-          <a class="link-arrow" href="#destinations">View All Destinations
+          <a class="link-arrow reveal" href="#destinations" style="--d:.3s">View All Destinations
             <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 5l7 7-7 7-1.4-1.4 4.6-4.6H4v-2h12.7l-4.6-4.6L13.5 5z"/></svg>
           </a>
         </div>
 
         <div class="dest-grid">
           <!-- Bali -->
-          <article class="dest-card reveal">
+          <article class="dest-card reveal" data-tilt>
             <div class="dest-media">
               <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Overwater bungalows at sunset in Bali, Indonesia">
                 <defs>
@@ -439,7 +447,7 @@
           </article>
 
           <!-- Paris -->
-          <article class="dest-card reveal">
+          <article class="dest-card reveal" data-tilt style="--d:.1s">
             <div class="dest-media">
               <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="The Eiffel Tower with cherry blossoms in Paris, France">
                 <defs>
@@ -479,7 +487,7 @@
           </article>
 
           <!-- Dubai -->
-          <article class="dest-card reveal">
+          <article class="dest-card reveal" data-tilt style="--d:.2s">
             <div class="dest-media">
               <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="The Burj Khalifa and Dubai skyline at dusk">
                 <defs>
@@ -529,7 +537,7 @@
           </article>
 
           <!-- Cancun -->
-          <article class="dest-card reveal">
+          <article class="dest-card reveal" data-tilt style="--d:.3s">
             <div class="dest-media">
               <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Turquoise beach and resort hotels in Cancun, Mexico">
                 <defs>
@@ -593,13 +601,33 @@
       </div>
     </section>
 
+    <!-- brand marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="mq">
+          <span class="stroke">Your Journey</span>
+          <svg class="ic" viewBox="0 0 24 24"><path fill="currentColor" d="M21.4 3.4c.7-.7.2-1.9-.8-1.8l-4.6.6L4.6 9.6c-.6.4-.5 1.3.2 1.5l4.7 1.4 1.4 4.7c.2.7 1.1.8 1.5.2l7.4-11.4.6-2.6z"/></svg>
+          <span class="grad">No Limits</span>
+          <svg class="ic" viewBox="0 0 24 24"><path fill="currentColor" d="M21.4 3.4c.7-.7.2-1.9-.8-1.8l-4.6.6L4.6 9.6c-.6.4-.5 1.3.2 1.5l4.7 1.4 1.4 4.7c.2.7 1.1.8 1.5.2l7.4-11.4.6-2.6z"/></svg>
+          <span class="stroke">Just Memories</span>
+          <svg class="ic" viewBox="0 0 24 24"><path fill="currentColor" d="M21.4 3.4c.7-.7.2-1.9-.8-1.8l-4.6.6L4.6 9.6c-.6.4-.5 1.3.2 1.5l4.7 1.4 1.4 4.7c.2.7 1.1.8 1.5.2l7.4-11.4.6-2.6z"/></svg>
+          <span class="grad">Explore</span>
+          <svg class="ic" viewBox="0 0 24 24"><path fill="currentColor" d="M21.4 3.4c.7-.7.2-1.9-.8-1.8l-4.6.6L4.6 9.6c-.6.4-.5 1.3.2 1.5l4.7 1.4 1.4 4.7c.2.7 1.1.8 1.5.2l7.4-11.4.6-2.6z"/></svg>
+          <span class="stroke">Dream</span>
+          <svg class="ic" viewBox="0 0 24 24"><path fill="currentColor" d="M21.4 3.4c.7-.7.2-1.9-.8-1.8l-4.6.6L4.6 9.6c-.6.4-.5 1.3.2 1.5l4.7 1.4 1.4 4.7c.2.7 1.1.8 1.5.2l7.4-11.4.6-2.6z"/></svg>
+          <span class="grad">Discover</span>
+          <svg class="ic" viewBox="0 0 24 24"><path fill="currentColor" d="M21.4 3.4c.7-.7.2-1.9-.8-1.8l-4.6.6L4.6 9.6c-.6.4-.5 1.3.2 1.5l4.7 1.4 1.4 4.7c.2.7 1.1.8 1.5.2l7.4-11.4.6-2.6z"/></svg>
+        </span>
+      </div>
+    </div>
+
     <!-- ============================================================
          6. WHY TRAVEL WITH US
     ============================================================= -->
     <section class="why" id="about" aria-labelledby="why-title">
       <div class="container why-grid">
         <div class="why-media reveal">
-          <svg viewBox="0 0 520 420" class="why-svg" role="img" aria-label="View of a sunset sky and airplane wing through a cabin window">
+          <svg viewBox="0 0 520 420" class="why-svg" data-parallax="0.04" role="img" aria-label="View of a sunset sky and airplane wing through a cabin window">
             <defs>
               <linearGradient id="cabin" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0" stop-color="#f6e9ff"/><stop offset="1" stop-color="#e4d0f5"/>
@@ -637,7 +665,7 @@
               <circle cx="48" cy="130" r="20" fill="#f9d6e6"/>
             </g>
           </svg>
-          <div class="dreams-badge">
+          <div class="dreams-badge" data-parallax="-0.05">
             <span class="db-script">We Turn</span>
             <span class="db-strong">DREAMS <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.4 3.4c.7-.7.2-1.9-.8-1.8l-4.6.6L4.6 9.6c-.6.4-.5 1.3.2 1.5l4.7 1.4 1.4 4.7c.2.7 1.1.8 1.5.2l7.4-11.4.6-2.6z"/></svg></span>
             <span class="db-strong grad-text">INTO DESTINATIONS</span>
@@ -647,8 +675,8 @@
         <div class="why-copy reveal">
           <p class="script-lead">Why Travel With Us?</p>
           <h2 id="why-title" class="section-title">
-            IT'S MORE THAN A TRIP,<br>
-            <span class="grad-text">IT'S AN EXPERIENCE.</span>
+            <span data-split>IT'S MORE THAN A TRIP,</span><br>
+            <span class="grad-text" data-split style="--d:.2s">IT'S AN EXPERIENCE.</span>
           </h2>
           <p class="why-sub">At Sky's The Limit Travels, we believe travel opens minds, creates stories, and connects hearts.</p>
           <ul class="check-grid">
@@ -692,12 +720,12 @@
               <svg viewBox="0 0 48 48"><g fill="none" stroke="url(#ringGrad)" stroke-width="2.4" stroke-linecap="round"><circle cx="24" cy="24" r="15"/><ellipse cx="24" cy="24" rx="7" ry="15"/><path d="M9.5 20h29M9.5 28h29"/><path d="M36 10c6 5 7 10 4 12M12 38c-6-5-7-10-4-12" opacity=".8"/><path fill="url(#ringGrad)" stroke="none" d="M40.5 5.5c.5-.3 1.1.2.9.8l-1.6 3 1.9 1.9c.2.2.1.6-.2.7l-1.4.4-1.3-1.3-1.6 2.8.6 1.1c.1.2 0 .5-.3.5h-.8l-.6-1.1-1.2-.1c-.2 0-.3-.3-.2-.5l.9-.8 3.1-1.8-1.3-1.3.4-1.4c.1-.3.5-.4.7-.2l1.9 1.9 3-1.6z" transform="translate(-6 2)"/></g></svg>
             </span>
             <div>
-              <h2 id="cta-title" class="cta-title">READY TO TAKE OFF?</h2>
+              <h2 id="cta-title" class="cta-title" data-split>READY TO TAKE OFF?</h2>
               <p class="cta-script">Let's Plan Your Next Adventure!</p>
             </div>
           </div>
 
-          <a href="#booking" class="btn btn-light btn-lg">
+          <a href="#booking" class="btn btn-light btn-lg" data-magnetic>
             <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.4 3.4c.7-.7.2-1.9-.8-1.8l-4.6.6L4.6 9.6c-.6.4-.5 1.3.2 1.5l4.7 1.4 1.4 4.7c.2.7 1.1.8 1.5.2l7.4-11.4.6-2.6z"/></svg>
             Book Your Trip Today
           </a>

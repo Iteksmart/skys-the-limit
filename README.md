@@ -36,6 +36,6 @@ SVG recreation when the file is absent). A transparent-background PNG around
 
 - **Fonts:** Montserrat (headings/body) + Dancing Script (script accents) via Google Fonts
 - **Responsive:** breakpoints at 1120px, 900px, and 560px; mobile nav drawer
-- **Motion:** scroll-reveal animations, floating hero art, drifting clouds — all disabled under `prefers-reduced-motion`
+- **Motion:** award-site-style animation system — inertial wheel scrolling, masked staggered word reveals on headlines (expo easing), scroll parallax layers, infinite brand marquee, 3D tilt on cards, magnetic buttons with shine sweep, custom cursor dot + trailing ring, hide-on-scroll header, and a scroll progress bar. Everything degrades gracefully and is fully disabled under `prefers-reduced-motion` and on touch devices where appropriate
 - **Interactions:** booking tabs, origin/destination swap, date pickers, toast notifications, back-to-top, scroll-spy nav
 - **Accessibility:** semantic landmarks, ARIA tabs/labels, keyboard focus styles, `aria-live` toast

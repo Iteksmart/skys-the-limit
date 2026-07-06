@@ -18,6 +18,9 @@
   var mainNav = $("#main-nav");
 
   var closeNav = function () {
+    if (mainNav.classList.contains("open") && mainNav.contains(document.activeElement)) {
+      navToggle.focus();
+    }
     mainNav.classList.remove("open");
     navToggle.setAttribute("aria-expanded", "false");
     navToggle.setAttribute("aria-label", "Open menu");
@@ -48,8 +51,14 @@
   var setActive = function () {
     var pos = window.scrollY + 140;
     var current = 0;
+    var bestTop = -Infinity;
     sections.forEach(function (sec, i) {
-      if (sec && sec.offsetTop <= pos) current = i;
+      if (!sec) return;
+      var top = sec.getBoundingClientRect().top + window.scrollY;
+      if (top <= pos && top > bestTop) {
+        bestTop = top;
+        current = i;
+      }
     });
     navLinks.forEach(function (a, i) {
       a.classList.toggle("active", i === current);
@@ -59,7 +68,7 @@
   };
   window.addEventListener("scroll", setActive, { passive: true });
 
-  /* ---------- booking tabs ---------- */
+  /* ---------- booking type buttons ---------- */
   var tabs = $$(".booking-tabs .tab");
   var fromInput = $("#bf-from");
   var toInput = $("#bf-to");
@@ -75,7 +84,7 @@
     tab.addEventListener("click", function () {
       tabs.forEach(function (t) {
         t.classList.toggle("active", t === tab);
-        t.setAttribute("aria-selected", String(t === tab));
+        t.setAttribute("aria-pressed", String(t === tab));
       });
       var ph = TAB_PLACEHOLDERS[tab.dataset.tab];
       if (ph) {
@@ -158,12 +167,13 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
-  /* ---------- date fields: min = today ---------- */
+  /* ---------- date fields: min = today (local time, not UTC) ---------- */
   ["bf-depart", "bf-return"].forEach(function (id) {
     var el = document.getElementById(id);
     el.addEventListener("focus", function () {
-      var today = new Date().toISOString().split("T")[0];
-      el.min = today;
+      var d = new Date();
+      var pad = function (n) { return String(n).padStart(2, "0"); };
+      el.min = d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate());
     });
   });
 })();

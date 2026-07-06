@@ -264,7 +264,8 @@
     <!-- ============================================================
          3. FEATURE BAR  +  4. BOOKING SEARCH
     ============================================================= -->
-    <section class="feature-booking" id="services">
+    <section class="feature-booking" id="services" aria-labelledby="services-title">
+      <h2 class="sr-only" id="services-title">Travel Services &amp; Trip Booking</h2>
       <div class="feature-band">
         <div class="container">
           <ul class="feature-grid">
@@ -302,20 +303,20 @@
 
       <div class="container booking-wrap" id="booking">
         <div class="booking-card reveal">
-          <div class="booking-tabs" role="tablist" aria-label="Booking type">
-            <button class="tab active" role="tab" aria-selected="true" id="tab-flights" data-tab="flights">
+          <div class="booking-tabs" role="group" aria-label="Booking type">
+            <button class="tab active" type="button" aria-pressed="true" id="tab-flights" data-tab="flights">
               <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.4 3.4c.7-.7.2-1.9-.8-1.8l-4.6.6L4.6 9.6c-.6.4-.5 1.3.2 1.5l4.7 1.4 1.4 4.7c.2.7 1.1.8 1.5.2l7.4-11.4.6-2.6z"/></svg>
               Flights
             </button>
-            <button class="tab" role="tab" aria-selected="false" id="tab-hotels" data-tab="hotels">
+            <button class="tab" type="button" aria-pressed="false" id="tab-hotels" data-tab="hotels">
               <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 21V4a1 1 0 011-1h9a1 1 0 011 1v17h-4v-4H8v4H4zm3-14h2v2H7V7zm4 0h2v2h-2V7zM7 11h2v2H7v-2zm4 0h2v2h-2v-2zm6 10V9l4 2v10h-4z"/></svg>
               Hotels
             </button>
-            <button class="tab" role="tab" aria-selected="false" id="tab-packages" data-tab="packages">
+            <button class="tab" type="button" aria-pressed="false" id="tab-packages" data-tab="packages">
               <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 6V4a2 2 0 012-2h2a2 2 0 012 2v2h4a1 1 0 011 1v13a1 1 0 01-1 1H5a1 1 0 01-1-1V7a1 1 0 011-1h4zm2 0h2V4h-2v2zM8 9v10h1.5V9H8zm6.5 0v10H16V9h-1.5z"/></svg>
               Packages
             </button>
-            <button class="tab" role="tab" aria-selected="false" id="tab-cruises" data-tab="cruises">
+            <button class="tab" type="button" aria-pressed="false" id="tab-cruises" data-tab="cruises">
               <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2l1 2h3v3l4 2-1.5 5.3c-.9-.4-1.7-.3-2.5.2-1.2.8-2.8.8-4 0-1.2.8-2.8.8-4 0-.8-.5-1.6-.6-2.5-.2L4 9l4-2V4h3l1-2zm-8 17c1.2.8 2.8.8 4 0 1.2.8 2.8.8 4 0 1.2.8 2.8.8 4 0 1 .7 2.3.8 3.4.3l.6.4v2c-1.4.5-2.9.3-4-.4-1.2.8-2.8.8-4 0-1.2.8-2.8.8-4 0-1.1.7-2.6.9-4 .4v-2l.6-.4c1.1.5 2.4.4 3.4-.3z"/></svg>
               Cruises
             </button>
@@ -695,10 +696,12 @@
       </div>
     </section>
 
-    <!-- ============================================================
-         8. FOOTER
-    ============================================================= -->
-    <footer class="site-footer" id="contact">
+  </main>
+
+  <!-- ============================================================
+       8. FOOTER
+  ============================================================= -->
+  <footer class="site-footer" id="contact">
       <div class="container footer-grid">
         <div class="f-brand" id="vip">
           <a class="brand brand-footer" href="#top" aria-label="Sky's The Limit Travels — back to top">
@@ -717,7 +720,7 @@
         </div>
 
         <nav class="f-col" aria-label="Quick links">
-          <h4>Quick Links</h4>
+          <h3>Quick Links</h3>
           <ul>
             <li><a href="#about">About Us</a></li>
             <li><a href="#destinations">Destinations</a></li>
@@ -729,7 +732,7 @@
         </nav>
 
         <nav class="f-col" aria-label="Travel services">
-          <h4>Travel Services</h4>
+          <h3>Travel Services</h3>
           <ul>
             <li><a href="#booking">Flights</a></li>
             <li><a href="#booking">Hotels</a></li>
@@ -741,7 +744,7 @@
         </nav>
 
         <div class="f-col f-contact">
-          <h4>Contact Us</h4>
+          <h3>Contact Us</h3>
           <ul>
             <li>
               <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
@@ -763,7 +766,7 @@
         </div>
 
         <div class="f-col f-news" id="blog">
-          <h4>Join Our Community</h4>
+          <h3>Join Our Community</h3>
           <p>Get exclusive deals and travel inspiration straight to your inbox!</p>
           <form class="news-form" id="news-form" aria-label="Newsletter signup">
             <label class="sr-only" for="news-email">Email address</label>
@@ -779,9 +782,7 @@
           <p class="fb-script">Your Journey. No Limits. Just Memories.</p>
         </div>
       </div>
-    </footer>
-
-  </main>
+  </footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
